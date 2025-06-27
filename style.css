@@ -1,0 +1,210 @@
+/*
+Theme Name: Gudha
+Theme URI: https://wpkoi.com/gudha-wpkoi-wordpress-theme/
+Template: martanda
+Author: wpkoithemes
+Author URI: https://wpkoi.com
+Description: Customized by Cass for grief-raging, truth-telling, no-bullshit survival.
+Requires at least: 6.1
+Tested up to: 6.3
+Requires PHP: 7.0
+Version: 1.0.1
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+Text Domain: gudha
+Tags: savage, custom, grief, dark-theme, truth-hammer
+*/
+
+@font-face {
+  font-family: 'Subway Novella';
+  src: url('/wp-content/themes/gudha/fonts/Subway-Novella.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Elegant Typewriter';
+  src: url('/wp-content/themes/gudha/fonts/Elegant-Typewriter.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ===== GLOBAL RESET TO CASS' STANDARDS OF BADASSERY ===== */
+body,
+input,
+select,
+textarea,
+button,
+label,
+legend,
+fieldset,
+caption,
+th,
+td,
+ul,
+ol,
+li,
+p,
+span,
+blockquote,
+figcaption {
+  font-family: 'Elegant Typewriter', serif !important;
+  color: #a8a9ad !important;
+}
+
+/* ===== HEADINGS, TITLES, NAV, LINKS ===== */
+h1, h2, h3, h4, h5, h6,
+.site-title,
+.gudha-site-title,
+.wp-block-site-title,
+.wp-block-navigation a,
+.nav-menu a,
+a,
+strong,
+b,
+.menu-item a,
+.widget-title,
+.wp-block-heading,
+.wp-block-post-title,
+.wp-block-query-title {
+  font-family: 'Subway Novella', serif !important;
+  color: #981518 !important;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
+/* ===== BODY BACKGROUND ===== */
+body {
+  background-color: #121212;
+}
+
+/* ===== LINKS ===== */
+a:hover {
+  color: #ff5e5e !important;
+  text-decoration: underline;
+}
+
+/* ===== NAVIGATION ===== */
+.wp-block-navigation,
+.nav-menu {
+  font-family: 'Subway Novella', serif;
+  font-size: 1.1rem;
+}
+
+.wp-block-navigation a,
+.nav-menu a {
+  color: #981518;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.wp-block-navigation a:hover,
+.nav-menu a:hover {
+  color: #ff5e5e;
+}
+
+/* ===== BUTTONS ===== */
+button,
+input[type="submit"],
+input[type="button"],
+.wp-block-button__link {
+  font-family: 'Subway Novella', serif !important;
+  background-color: #981518;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover,
+input[type="submit"]:hover,
+.wp-block-button__link:hover {
+  background-color: #ff5e5e;
+  color: #121212;
+}
+
+/* ===== TABLES ===== */
+table, td, th {
+  border-color: rgba(255,255,255,.2) !important;
+  font-family: 'Elegant Typewriter', serif;
+  color: #a8a9ad;
+}
+
+/* ===== BLOCKQUOTES ===== */
+blockquote,
+.wp-block-quote {
+  font-style: italic;
+  font-family: 'Elegant Typewriter', serif;
+  color: #a8a9ad;
+  border-left: 4px solid #981518;
+  padding-left: 1rem;
+}
+
+/* ===== CAPTIONS & FIGURE ===== */
+figcaption,
+.wp-caption-text {
+  font-size: 0.9rem;
+  font-family: 'Elegant Typewriter', serif;
+  color: #a8a9ad;
+}
+
+/* ===== FORM FIELDS ===== */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+textarea {
+  font-family: 'Elegant Typewriter', serif;
+  background: #1a1a1a;
+  color: #a8a9ad;
+  border: 1px solid #444;
+  padding: 0.5rem;
+}
+
+/* ===== FOOTER ===== */
+.site-info,
+footer,
+.site-footer,
+.widget {
+  font-family: 'Elegant Typewriter', serif;
+  color: #a8a9ad;
+}
+
+/* ===== TITLE HOLDER ===== */
+.gudha-title-holder h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Subway Novella', serif;
+  color: #981518;
+}
+
+/* ===== NOISE OVERLAY ===== */
+.gudha-noise {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  pointer-events: none;
+  background-size: 100px 100px;
+  background-repeat: repeat;
+  -webkit-animation: gudhanoise .2s steps(1) infinite;
+  animation: gudhanoise .2s steps(1) infinite;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  z-index: 9998;
+}
+
+/* ===== ANIMATED NOISE JITTER ===== */
+@keyframes gudhanoise {
+  0% { transform: scale(1); }
+  25% { transform: scaleX(-2); }
+  50% { transform: scale(-1); }
+  75% { transform: scaleY(-1); }
+}
